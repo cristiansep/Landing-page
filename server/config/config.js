@@ -34,7 +34,7 @@ module.exports.SEED = 'este-es-un-seed-de-prueba';
 //=====================================
 let urlDB;
 
-urlDB ='mongodb://159.89.87.139:27017/portafolioDB'
+urlDB ='mongodb://localhost:27017/portafolioDB'
 
 process.env.URLDB = urlDB;
 
