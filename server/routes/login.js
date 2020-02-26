@@ -39,7 +39,15 @@ app.post("/", (req, res) => {
         }
   
         // validar contraseña
-        if(!bcrypt.compareSync(body.password, usuarioDB.password)){
+        // if(!bcrypt.compareSync(body.password, usuarioDB.password)){
+        //   return res.status(400).json({
+        //       ok: false,
+        //       mensaje: "Credenciales incorrectas"
+           
+        //     });
+        // }
+
+        if(!body.password, usuarioDB.password){
           return res.status(400).json({
               ok: false,
               mensaje: "Credenciales incorrectas"
