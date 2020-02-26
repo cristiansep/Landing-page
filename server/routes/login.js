@@ -50,7 +50,7 @@ app.post("/", (req, res) => {
   
         // crear token!!!  
          usuarioDB.password = ':)';              //semilla    //duración
-        let token = jwt.sign({usuario: usuarioDB}, SEED ,{expiresIn: process.env.CADUCIDAD_TOKEN}); //expira en 4 horas
+        let token = jwt.sign({usuario: usuarioDB}, SEED ,{expiresIn: 14400}); //expira en 4 horas
   
       res.status(200).json({
         ok: true,
