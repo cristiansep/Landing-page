@@ -9,7 +9,7 @@ const usuarioSchema = new Schema({
     email: {type: String, unique: true, required:[true,'El correo es necesario']},
     password: {type: String, required:[true,'La contraseña es necesario']},
     img: {type: String, required:false},
-    telefono: {type: String, required:[true,'El telefono es necesario']},
+    telefono: {type: String, required:false},
     direccion: {type: String, required:false},
     desc: {type: String, required:false}
    
